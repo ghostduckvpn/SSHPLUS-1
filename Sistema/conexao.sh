@@ -141,7 +141,7 @@ echo -e "http_port $Pts" >> $var_sqd
 done
 echo -e "
 #Nome squid
-visible_hostname SSHPLUS 
+visible_hostname GHOSTDUCKVPN 
 via off
 forwarded_for off
 pipeline_prefetch off" >> $var_sqd
@@ -1211,7 +1211,7 @@ key-direction 1
 auth-user-pass
 float" > /etc/openvpn/client-common.txt
 	# Generates the custom client.ovpn
-	newclient "SSHPLUS"
+	newclient "GHOSTDUCK"
 	echo ""
 	echo -e "\033[1;32mOPENVPN INSTALADO COM SUCESSO\033[0m"
 fi
