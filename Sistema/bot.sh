@@ -15,7 +15,7 @@ ajuda ()
     if [[ "${message_from_id[$id]}" = "$id_admin" ]]; then
         local env_msg
         env_msg="=×=×=×=×=×=×=×=×=×=×=×=×=×=\n"
-        env_msg+="<b>BEM VINDO(a) AO BOT SSHPLUS</b>\n"
+        env_msg+="<b>BEM VINDO(a) AO BOT GHOST DUCK VPN</b>\n"
         env_msg+="=×=×=×=×=×=×=×=×=×=×=×=×=×=\n\n"
         env_msg+="⚠️ <i>Comandos Disponiveis</i>\n\n"
         env_msg+="[<b>01</b>] /criarusuario = Cria usuario\n"
@@ -43,9 +43,9 @@ ajuda ()
     elif [[ -d /etc/bot/revenda/${message_from_username} ]]; then
         local env_msg1
         env_msg1="=×=×=×=×=×=×=×=×=×=×=×=×=×=\n"
-        env_msg1+="<b>BEM VINDO(a) AO BOT SSHPLUS</b>\n"
+        env_msg1+="<b>BEM VINDO(a) AO BOT GHOST DUCK VPN</b>\n"
         env_msg1+="=×=×=×=×=×=×=×=×=×=×=×=×=×=\n\n"
-        env_msg1+="⚠️ <i>Comandos Disponiveis</i>\n\n"
+        env_msg1+="➜ <i>Comandos Disponiveis</i>\n\n"
         env_msg1+="[<b>01</b>] /criarusuario = Cria usuario\n"
         env_msg1+="[<b>02</b>] /criarteste = Cria teste ssh\n"
         env_msg1+="[<b>03</b>] /remover = Remove usuario\n"
@@ -82,9 +82,9 @@ fun_revenda() {
     }
     local env_msg1
     env_msg1="=×=×=×=×=×=×=×=×=×=×=×=×=×=\n"
-    env_msg1+="<b>MENU REVENDA BOT SSHPLUS</b>\n"
+    env_msg1+="<b>MENU REVENDA BOT GHOST DUCK VPN</b>\n"
     env_msg1+="=×=×=×=×=×=×=×=×=×=×=×=×=×=\n\n"
-    env_msg1+="⚠️ <i>Comandos Disponiveis</i>\n\n"
+    env_msg1+="➜ <i>Comandos Disponiveis</i>\n\n"
     env_msg1+="[<b>01</b>] /add_revenda = Cria\n"
     env_msg1+="[<b>02</b>] /del_revenda = Remove\n"
     env_msg1+="[<b>03</b>] /limite_revenda = Altera\n"
@@ -102,7 +102,7 @@ fun_revenda() {
 fun_ajuda() {
     if [[ "${message_from_id[$id]}" = "$id_admin" ]]; then
         local env_msg
-        env_msg+="⚠️ <b>COMANDOS E SUAS FUNCOES</b>\n\n"
+        env_msg+="➜ <b>COMANDOS E SUAS FUNCOES</b>\n\n"
         env_msg+="<b>1</b> /criarusuario - <code>cria usuario ssh</code>\n\n"
         env_msg+="<b>2</b> /remover - <code>Remove usuario ssh</code>\n\n"
         env_msg+="<b>3</b> /infousers - <code>Exibe informacoes do usuarios</code>\n\n"
@@ -134,7 +134,7 @@ fun_ajuda() {
         return 0
     elif [[ -d /etc/bot/revenda/${message_from_username} ]]; then
         local env_msg
-        env_msg+="⚠️ <b>COMANDOS E SUAS FUNCOES</b>\n\n"
+        env_msg+="➜ <b>COMANDOS E SUAS FUNCOES</b>\n\n"
         env_msg+="<b>1</b> /criarusuario - <code>cria usuario ssh</code>\n\n"
         env_msg+="<b>2</b> /remover - <code>Remove usuario ssh</code>\n\n"
         env_msg+="<b>3</b> /infousers - <code>Exibe informacoes do usuarios</code>\n\n"
@@ -193,7 +193,7 @@ ver_users ()
         info_users='=×=×=×=×=×=×=×=×=×=×=×=×=×=\n'
         info_users+='<b>INFORMACOES DOS USUARIOS</b>\n'
         info_users+='=×=×=×=×=×=×=×=×=×=×=×=×=×=\n\n'
-        info_users+='⚠️ Exibe no formato abaixo:\n\n'
+        info_users+='➜ Exibe no formato abaixo:\n\n'
         info_users+='<code>USUÁRIO SENHA LIMITE DATA</code>\n'
         ShellBot.sendMessage --chat_id ${message_chat_id[$id]} \
             --text "$(echo -e $info_users)" \
@@ -231,7 +231,7 @@ ver_users ()
         info_users='=×=×=×=×=×=×=×=×=×=×=×=×=×=\n'
         info_users+='<b>INFORMACOES DOS USUARIOS</b>\n'
         info_users+='=×=×=×=×=×=×=×=×=×=×=×=×=×=\n\n'
-        info_users+='⚠️ Exibe no formato abaixo:\n\n'
+        info_users+='➜ Exibe no formato abaixo:\n\n'
         info_users+='<code>USUÁRIO SENHA LIMITE DATA</code>\n'
         ShellBot.sendMessage --chat_id ${message_chat_id[$id]} \
             --text "$(echo -e $info_users)" \
@@ -309,7 +309,7 @@ monitor_ssh2() {
           info_on='=×=×=×=×=×=×=×=×=×=×=×=×=×=\n'
           info_on+='<b>MONITOR USUARIOS ONLINES</b>\n'
           info_on+='=×=×=×=×=×=×=×=×=×=×=×=×=×=\n\n'
-          info_on+='⚠️ Exibe no formato abaixo:\n\n'
+          info_on+='➜ Exibe no formato abaixo:\n\n'
           info_on+='<code>USUÁRIO  ONLINE/LIMITE  TEMPO\n</code>'
         ShellBot.sendMessage --chat_id ${message_chat_id[$id]} \
         --text "$(echo -e $info_on)" \
@@ -357,7 +357,7 @@ monitor_ssh2() {
           info_on='=×=×=×=×=×=×=×=×=×=×=×=×=×=\n'
           info_on+='<b>MONITOR USUARIOS ONLINES</b>\n'
           info_on+='=×=×=×=×=×=×=×=×=×=×=×=×=×=\n\n'
-          info_on+='⚠️ Exibe no formato abaixo:\n\n'
+          info_on+='➜ Exibe no formato abaixo:\n\n'
           info_on+='<code>USUÁRIO  ONLINE/LIMITE  TEMPO\n</code>'
         ShellBot.sendMessage --chat_id ${message_chat_id[$id]} \
         --text "$(echo -e $info_on)" \
@@ -602,9 +602,9 @@ payloads ()
 sobremim() {
     local msg
         msg="=×=×=×=×=×=×=×=×=×=×=×=×=×=\n"
-        msg+="<b>🤖 BOT SSHPLUS MANAGER 🤖</b>\n"
+        msg+="<b>🦆 BOT SSHPLUS GHOST DUCK VPN 🦆</b>\n"
         msg+="=×=×=×=×=×=×=×=×=×=×=×=×=×=\n\n"
-        msg+="<b>Desenvolvido por:</b> @script90\n"
+        msg+="<b>Desenvolvido por:</b> @ghostduck\n"
         msg+="Fui criado com o propósito de fornecer informações e ferramentas para gestao de vps 🐧 GNU/Linux 🐧 com foco em uso VPN\n\n"
         msg+="<b>Menu:</b> /menu\n"
         ShellBot.sendMessage --chat_id ${message_chat_id[$id]} \
@@ -936,7 +936,7 @@ alterar_data_user ()
     [[ "$(echo -e "$inputdate" | sed -e 's/[^/]//ig')" != '//' ]] && {
         udata=$(date "+%d/%m/%Y" -d "+$inputdate days")
         sysdate="$(echo "$udata" | awk -v FS=/ -v OFS=- '{print $3,$2,$1}')"
-        echo crazy
+        echo Ghost Duck
     } || {
         udata=$(echo -e "$inputdate")
         sysdate="$(echo -e "$inputdate" | awk -v FS=/ -v OFS=- '{print $3,$2,$1}')"
@@ -1918,11 +1918,11 @@ do
                             --text 'Informe o user dele [Ex: @script90]:' \
                             --reply_markup "$(ShellBot.ForceReply)"
                         ;;
-                    'Informe o user dele [Ex: @script90]:')
+                    'Informe o user dele [Ex: @ghostduck]:')
                         _VAR1=$(echo -e ${message_text[$id]}| awk  -F '@' {'print $2'})
                         [[ -z $_VAR1 ]] && {
                             ShellBot.sendMessage --chat_id ${message_chat_id[$id]} \
-                                --text "$(echo -e "❌ Erro \n\n⚠️ Informe o user [EX: @script90]")" \
+                                --text "$(echo -e "❌ Erro \n\n⚠️ Informe o user [EX: @ghodtduck]")" \
                                 --parse_mode html
                                 break
                         }
