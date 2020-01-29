@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # encoding: utf-8
-# SSHPLUS By @Crazy_vpn
+# SSHPLUS By @GhostDuck
 import socket, threading, thread, select, signal, sys, time
 from os import system
 system("clear")
@@ -13,7 +13,7 @@ except:
 PASS = ''
 BUFLEN = 4096 * 4
 TIMEOUT = 60
-MSG = 'SSHPLUS'
+MSG = 'GHOSTDUCK 🦆'
 DEFAULT_HOST = '0.0.0.0:22'
 RESPONSE = "HTTP/1.1 200 " + str(MSG) + "\r\nContent-length: 0\r\n\r\n \r\n\r\n"
  
@@ -227,7 +227,7 @@ def main(host=IP, port=PORT):
     print "\033[0;34m━"*8,"\033[1;32m PROXY SOCKS","\033[0;34m━"*8,"\n"
     print "\033[1;33mIP:\033[1;32m " + IP
     print "\033[1;33mPORTA:\033[1;32m " + str(PORT) + "\n"
-    print "\033[0;34m━"*10,"\033[1;32m SSHPLUS","\033[0;34m━\033[1;37m"*11,"\n"
+    print "\033[0;34m━"*10,"\033[1;32m GHOSTDUCK","\033[0;34m━\033[1;37m"*11,"\n"
     server = Server(IP, PORT)
     server.start()
     while True:
