@@ -92,7 +92,7 @@ clear
 echo ""
 echo -e "          \033[1;33m[\033[1;31m!\033[1;33m] \033[1;32mINSTALANDO PACOTES \033[1;33m[\033[1;31m!\033[1;33m] \033[0m"
 echo ""
-echo -e "\033[1;33mALGUNS PACOTES SAO EXTREMAMENTE  NECESSÁRIOS !\033[0m"
+echo -e "\033[1;33mALGUNS PACOTES SAO EXTREMAMENTE  NECESSÁRIOS AGUARDE !\033[0m"
 echo ""
 inst_pct () {
 _pacotes=("bc" "screen" "nano" "unzip" "lsof" "netstat" "dos2unix" "nload" "htop" "jq" "curl" "figlet" "python" "python3" "python-pip")
