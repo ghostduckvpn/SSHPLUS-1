@@ -178,9 +178,9 @@ _userexp=$(printf '%-5s' "$_expuser")
 _tuser=$(awk -F: '$3>=1000 {print $1}' /etc/passwd | grep -v nobody | wc -l)
 clear
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\E[41;1;37m               ❖ SSHPLUS MANAGER ❖                \E[0m"
+echo -e "\E[41;1;37m               ★ GHOST DUCK VPN ★           \E[0m"
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\033[1;32mSISTEMA            MEMÓRIA RAM      PROCESSADOR "
+echo -e "\033[1;32mSISTEMA                VRAM                 VCPU "
 echo -e "\033[1;31mOS: \033[1;37m$_system \033[1;31mTotal:\033[1;37m$_ram \033[1;31mNucleos: \033[1;37m$_core\033[0m"
 echo -e "\033[1;31mHora: \033[1;37m$_hora     \033[1;31mEm uso: \033[1;37m$_usor \033[1;31mEm uso: \033[1;37m$_usop\033[0m"
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
@@ -198,7 +198,7 @@ echo -e "\033[1;37m[\033[1;31m20\033[1;37m] • \033[1;33mADICIONAR HOST \033[1;
 [\033[1;31m22\033[1;37m] • \033[1;33mREINICIAR SISTEMA \033[1;37m  [\033[1;31m28\033[1;37m] $var01 \033[1;33mATUALIZAR SCRIPT \033[1;37m
 [\033[1;31m23\033[1;37m] • \033[1;33mREINICIAR SERVICOS \033[1;37m [\033[1;31m29\033[1;37m] • \033[1;33mREMOVER SCRIPT \033[1;37m
 [\033[1;31m24\033[1;37m] • \033[1;33mBLOCK TORRENT $stsf\033[1;37m    [\033[1;31m30\033[1;37m] • \033[1;33mVOLTAR \033[1;32m<\033[1;33m<\033[1;31m< \033[1;37m
-[\033[1;31m25\033[1;37m] • \033[1;33mBOT TELEGRAM $stsbot\033[1;37m     [\033[1;31m00\033[1;37m] • \033[1;33mSAIR \033[1;32m<\033[1;33m<\033[1;31m<\033[1;37m"
+[\033[1;31m25\033[1;37m] • \033[1;33mREVENDA GHOST DUCK $stsbot\033[1;37m     [\033[1;31m00\033[1;37m] • \033[1;33mSAIR \033[1;32m<\033[1;33m<\033[1;31m<\033[1;37m"
 echo ""
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo ""
@@ -291,9 +291,9 @@ _userexp=$(printf '%-5s' "$_expuser")
 _tuser=$(awk -F: '$3>=1000 {print $1}' /etc/passwd | grep -v nobody | wc -l)
 clear
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\E[41;1;37m               ❖ SSHPLUS MANAGER ❖                \E[0m"
+echo -e "\E[41;1;37m               ★ GHOST DUCK VPN ★                \E[0m"
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\033[1;32mSISTEMA            MEMÓRIA RAM      PROCESSADOR "
+echo -e "\033[1;32mSISTEMA               VRAM                  VCPU "
 echo -e "\033[1;31mOS: \033[1;37m$_system \033[1;31mTotal:\033[1;37m$_ram \033[1;31mNucleos: \033[1;37m$_core\033[0m"
 echo -e "\033[1;31mHora: \033[1;37m$_hora     \033[1;31mEm uso: \033[1;37m$_usor \033[1;31mEm uso: \033[1;37m$_usop\033[0m"
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
