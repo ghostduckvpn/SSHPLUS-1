@@ -82,7 +82,7 @@ wget https://raw.githubusercontent.com/twossh/SSHPLUS/master/Sistema/cabecalho.s
 chmod +x /etc/SSHPlus/cabecalho
 wget https://raw.githubusercontent.com/ghostduckvpn/SSHPLUS-1/ghostduckssh/Sistema/bot.sh -O /etc/SSHPlus/bot > /dev/null 2>&1
 chmod +x /etc/SSHPlus/bot
-wget https://raw.githubusercontent.com/twossh/SSHPLUS/master/Sistema/proxy.py -O /etc/SSHPlus/proxy.py > /dev/null 2>&1
+wget https://raw.githubusercontent.com/ghostduckvpn/SSHPLUS-1/ghostduckssh/Sistema/proxy.py -O /etc/SSHPlus/proxy.py > /dev/null 2>&1
 chmod +x /etc/SSHPlus/proxy.py
 wget https://raw.githubusercontent.com/ghostduckvpn/SSHPLUS-1/ghostduckssh/Sistema/sshplus -O /usr/lib/sshplus > /dev/null 2>&1
 chmod +x /usr/lib/sshplus
