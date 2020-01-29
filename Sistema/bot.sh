@@ -17,7 +17,7 @@ ajuda ()
         env_msg="=×=×=×=×=×=×=×=×=×=×=×=×=×=\n"
         env_msg+="<b>BEM VINDO(a) AO BOT GHOST DUCK VPN</b>\n"
         env_msg+="=×=×=×=×=×=×=×=×=×=×=×=×=×=\n\n"
-        env_msg+="⚠️ <i>Comandos Disponiveis</i>\n\n"
+        env_msg+="➜ <i>Comandos Disponiveis</i>\n\n"
         env_msg+="[<b>01</b>] /criarusuario = Cria usuario\n"
         env_msg+="[<b>02</b>] /criarteste = Cria teste ssh\n"
         env_msg+="[<b>03</b>] /remover = Remove usuario\n"
@@ -602,7 +602,7 @@ payloads ()
 sobremim() {
     local msg
         msg="=×=×=×=×=×=×=×=×=×=×=×=×=×=\n"
-        msg+="<b>🦆 BOT SSHPLUS GHOST DUCK VPN 🦆</b>\n"
+        msg+="<b>🦆 BOT GHOST DUCK VPN 🦆</b>\n"
         msg+="=×=×=×=×=×=×=×=×=×=×=×=×=×=\n\n"
         msg+="<b>Desenvolvido por:</b> @ghostduck\n"
         msg+="Fui criado com o propósito de fornecer informações e ferramentas para gestao de vps 🐧 GNU/Linux 🐧 com foco em uso VPN\n\n"
@@ -1624,7 +1624,7 @@ do
                         sizemax=$(echo -e ${#message_text[$id]})
                         [[ "$sizemax" -gt '8' ]] && {
                             ShellBot.sendMessage --chat_id ${message_chat_id[$id]} \
-                                --text "$(echo -e "❌ Erro !\n\nUse no maximo 8 caracteres\n[EX: crazy]")" \
+                                --text "$(echo -e "❌ Erro !\n\nUse no maximo 8 caracteres\n[EX: GhostDuck]")" \
                                 --parse_mode html
                             > $CAD_ARQ
                             break
